@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.upload-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.upload-card {
+    background: #1e293b;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px dashed #334155;
+}
+
+.upload-card h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.preview {
+    width: 100%;
+    height: 120px;
+    background: #0f172a;
+    margin-top: 10px;
+    border-radius: 6px;
+    background-size: cover;
+    background-position: center;
+}
+
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.output-container {
+    margin-top: 20px;
+}
+
+canvas {
+    width: 270px;
+    height: 480px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    background: black;
+}
+
+#downloadLink {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #16a34a;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
