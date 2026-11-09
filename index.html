@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritmik Video Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>4 Bo‘limli Ritmik Video Generator</h1>
+        <p>Har bir bo‘lim uchun o‘z rasmingizni yuklang va videoni yarating!</p>
+
+        <!-- 4 ta rasm yuklash bo‘limi -->
+        <div class="upload-grid">
+            <div class="upload-card">
+                <h3>1-bo‘lim rasmi</h3>
+                <input type="file" id="img1" accept="image/*">
+                <div class="preview" id="prev1"></div>
+            </div>
+            <div class="upload-card">
+                <h3>2-bo‘lim rasmi</h3>
+                <input type="file" id="img2" accept="image/*">
+                <div class="preview" id="prev2"></div>
+            </div>
+            <div class="upload-card">
+                <h3>3-bo‘lim rasmi</h3>
+                <input type="file" id="img3" accept="image/*">
+                <div class="preview" id="prev3"></div>
+            </div>
+            <div class="upload-card">
+                <h3>4-bo‘lim rasmi</h3>
+                <input type="file" id="img4" accept="image/*">
+                <div class="preview" id="prev4"></div>
+            </div>
+        </div>
+
+        <button id="generateBtn">Videoni Hosil Qilish</button>
+
+        <!-- Natija va Canvas -->
+        <div class="output-container">
+            <canvas id="videoCanvas" width="1080" height="1920"></canvas>
+            <br>
+            <a id="downloadLink" style="display:none;" download="ritm_video.webm">Videoni Yuklab Olish</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
